@@ -27,7 +27,7 @@ NEVER SAY DIEはSEGV発生時の救助を果たす為に開発されました。
 
 == SYNOPSIS:
 
-以下のテストで内容をお見せしよう:
+以下のテストでどんな事だかみせてやるぜ:
 
   assert_raises NeverSayDie do
     NeverSayDie.segv

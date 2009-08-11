@@ -1,10 +1,11 @@
 .autotest
+CHANGELOG.ja.rdoc
 CHANGELOG.rdoc
 Manifest.txt
+README.ja.rdoc
 README.rdoc
 Rakefile
 ext/neversaydie/extconf.rb
 ext/neversaydie/neversaydie.c
 lib/neversaydie.rb
-lib/neversaydie/neversaydie.bundle
 test/test_never_say_die.rb

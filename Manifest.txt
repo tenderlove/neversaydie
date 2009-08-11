@@ -3,7 +3,6 @@ CHANGELOG.rdoc
 Manifest.txt
 README.rdoc
 Rakefile
-bin/never_say_die
 ext/neversaydie/extconf.rb
 ext/neversaydie/neversaydie.c
 lib/neversaydie.rb

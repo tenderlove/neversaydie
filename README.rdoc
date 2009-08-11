@@ -1,32 +1,57 @@
 = never_say_die
 
-* FIX (url)
+* http://seattlerb.rubyforge.org
+* http://github.com/tenderlove/neversaydie
 
 == DESCRIPTION:
 
-FIX (describe your package)
+NEVER SAY DIE lets you rescue from segmentation faults.  Got a SEGV, don't
+worry about it anymore!  Just rescue an exception and get on with life.
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+* Oh so many problems...
+* Portability...
+* Not solving the root cause..
+* Just to name a few
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+I will let the (passing) test speak for itself:
+
+  assert_raises NeverSayDie do
+    NeverSayDie.segv
+  end
+
+Here is the source of the segv method:
+
+  static VALUE segv(VALUE self)
+  {
+    int *ptr = NULL;
+    *ptr = 1;
+  
+    return self;
+  }
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* libsigsegv
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+First, install libsigsegv.  If you're on OS X, do this:
+
+  $ sudo port install libsigsegv
+
+I'm not sure about other platforms.  Then install the gem:
+
+  $ sudo gem install neversaydie
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2009 FIX
+Copyright (c) 2009 Aaron Patterson
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

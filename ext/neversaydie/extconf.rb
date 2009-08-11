@@ -51,6 +51,6 @@ unless find_library('sigsegv', 'sigsegv_install_handler', *LIB_DIRS)
   abort "sigsegv is missing.  please install it."
 end
 
-create_makefile('sigsegv/sigsegv')
+create_makefile('neversaydie/neversaydie')
 
 # :startdoc:

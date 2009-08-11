@@ -1,8 +1,10 @@
 require "test/unit"
-require "never_say_die"
+require "neversaydie"
 
 class TestNeverSayDie < Test::Unit::TestCase
-  def test_sanity
-    flunk "write tests or I will kneecap you"
+  def test_called
+    assert_raises NeverSayDie do
+      NeverSayDie.segv
+    end
   end
 end

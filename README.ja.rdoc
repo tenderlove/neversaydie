@@ -19,21 +19,21 @@ NEVER SAY DIEはSEGV発生時の救助を果たす為に開発されました。
 
 == FEATURES/PROBLEMS:
 
-* Oh so many problems...
-* Portability...
-* Not solving the root cause..
-* It might not work.
-* Just to name a few
+* 問題は間違いなくあるだろう
+* 移植性
+* 根本的な問題には修正不能
+* 時々機能停止する
+* 以上
 
 == SYNOPSIS:
 
-I will let the (passing) test speak for itself:
+以下のテストで内容をお見せしよう:
 
   assert_raises NeverSayDie do
     NeverSayDie.segv
   end
 
-Here is the source of the segv method:
+以下はsegvのメソッドのソースコード:
 
   static VALUE segv(VALUE self)
   {
@@ -49,11 +49,13 @@ Here is the source of the segv method:
 
 == INSTALL:
 
-First, install libsigsegv.  If you're on OS X, do this:
+第1章: libsigsegv をインストール。OS X を使用の場合、以下のコマンドを使用:
 
   $ sudo port install libsigsegv
 
-I'm not sure about other platforms.  Then install the gem:
+他のプラットホームについては現在未確認
+
+第2章: gem をインストール：
 
   $ sudo gem install neversaydie
 

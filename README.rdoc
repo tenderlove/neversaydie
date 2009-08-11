@@ -1,4 +1,4 @@
-= never_say_die
+= NeverSayDie
 
 * http://seattlerb.rubyforge.org
 * http://github.com/tenderlove/neversaydie

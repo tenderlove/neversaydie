@@ -6,13 +6,21 @@
 == DESCRIPTION:
 
 NEVER SAY DIE lets you rescue from segmentation faults.  Got a SEGV, don't
-worry about it anymore!  Just rescue an exception and get on with life.
+worry about it anymore!  Just rescue an exception and get on with life.  Who
+cares about getting a SEGV anyway?  It's just memory.  I mean, when I was in
+school, I didn't need 100% to pass the class.  Why should your memory need to
+be 100% correct to get the job done?  A little memory corruption here and there
+doesn't hurt anyone.
+
+So go for it!  Kick back, grab a beer, require the NEVER SAY DIE gem and let
+your problems go away sometimes!
 
 == FEATURES/PROBLEMS:
 
 * Oh so many problems...
 * Portability...
 * Not solving the root cause..
+* It might not work.
 * Just to name a few
 
 == SYNOPSIS:

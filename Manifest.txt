@@ -1,0 +1,7 @@
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/never_say_die
+lib/never_say_die.rb
+test/test_never_say_die.rb

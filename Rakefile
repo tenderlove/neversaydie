@@ -8,8 +8,8 @@ require "rake/extensiontask"
 name = 'neversaydie'
 HOE = Hoe.spec name do
   developer('Aaron Patterson', 'aaronp@rubyforge.org')
-  self.readme_file   = 'README.rdoc'
-  self.history_file  = 'CHANGELOG.rdoc'
+  self.readme_file   = ['README', ENV['HLANG'], 'rdoc'].compact.join('.')
+  self.history_file  = ['CHANGELOG', ENV['HLANG'], 'rdoc'].compact.join('.')
   self.extra_rdoc_files  = FileList['*.rdoc']
   spec_extras[:extensions] = "ext/neversaydie/extconf.rb"
   self.rubyforge_name = 'seattlerb'

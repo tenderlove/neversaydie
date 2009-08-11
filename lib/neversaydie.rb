@@ -1,5 +1,5 @@
 require 'neversaydie/neversaydie'
 
-class NeverSayDie
+class NeverSayDie < RuntimeError
   VERSION = '1.0.0'
 end

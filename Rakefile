@@ -11,7 +11,8 @@ HOE = Hoe.spec name do
   self.readme_file   = 'README.rdoc'
   self.history_file  = 'CHANGELOG.rdoc'
   self.extra_rdoc_files  = FileList['*.rdoc']
-  spec_extras[:extensions] = "ext/nokogiri/extconf.rb"
+  spec_extras[:extensions] = "ext/neversaydie/extconf.rb"
+  self.rubyforge_name = 'seattlerb'
 end
 
 RET = Rake::ExtensionTask.new(name, HOE.spec) do |ext|

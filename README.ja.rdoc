@@ -6,7 +6,7 @@
 == DESCRIPTION:
 
 
-NEVER SAY DIEはSEGV発生時の救助を果たす為に開発されました。どんな過酷な
+NEVER SAY DIEはSEGV発生時の救助を果たす為に開発された。どんな過酷な
 状況下でも、SEGVがあれば君の人生は救われたも同然。なんでSEGVが必要かって？
 ただのメモリだろ？ 俺が、高校生だった時、テストで１００点なんか進級するのに
 必要なかったんだから。なんで、作業を済ます為に君のメモリが１００％
@@ -23,6 +23,7 @@ NEVER SAY DIEはSEGV発生時の救助を果たす為に開発されました。
 * 移植性
 * 根本的な問題には修正不能
 * 時々機能停止する
+* 大量のセキュリティホール
 * 以上
 
 == SYNOPSIS:
@@ -33,7 +34,7 @@ NEVER SAY DIEはSEGV発生時の救助を果たす為に開発されました。
     NeverSayDie.segv
   end
 
-以下はsegvのメソッドのソースコード:
+以下はsegvメソッドのソースコード:
 
   static VALUE segv(VALUE self)
   {
@@ -49,13 +50,13 @@ NEVER SAY DIEはSEGV発生時の救助を果たす為に開発されました。
 
 == INSTALL:
 
-第1章: libsigsegv をインストール。OS X を使用の場合、以下のコマンドを使用:
+その1: libsigsegv をインストールする。OS X の場合、以下のコマンドを実行しよう:
 
   $ sudo port install libsigsegv
 
-他のプラットホームについては現在未確認
+他のプラットホームでの方法については現在未確認
 
-第2章: gem をインストール：
+その2: gem でインストール：
 
   $ sudo gem install neversaydie
 

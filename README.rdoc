@@ -56,6 +56,23 @@ I'm not sure about other platforms.  Then install the gem:
 
   $ sudo gem install neversaydie
 
+== pry-rescue
+
+If you do this:
+
+  $ sudo gem install pry-rescue
+
+Then you run a segfaulting program, wrapped like this:
+
+  require 'pry-rescue'
+  Pry.rescue do
+    # errant thing goes here.
+  end
+
+You will then be able to inspect local variables, re-send the failing method
+calls, etcetera. In other words, you will get the full powers of Pry even for
+errors causing SIGSEGV.
+
 == LICENSE:
 
 (The MIT License)

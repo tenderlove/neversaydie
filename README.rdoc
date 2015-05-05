@@ -52,6 +52,9 @@ First, install libsigsegv.  If you're on OS X, do this:
 
   $ sudo port install libsigsegv
 
+If you're on Debian, do this:
+  $ sudo apt-get install libsigsegv-dev
+
 I'm not sure about other platforms.  Then install the gem:
 
   $ sudo gem install neversaydie

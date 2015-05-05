@@ -6,13 +6,14 @@ gem 'rake-compiler', '>= 0.4.1'
 require "rake/extensiontask"
 
 name = 'neversaydie'
+Hoe.plugin :gemspec
 HOE = Hoe.spec name do
   developer('Aaron Patterson', 'aaronp@rubyforge.org')
   self.readme_file   = ['README', ENV['HLANG'], 'rdoc'].compact.join('.')
   self.history_file  = ['CHANGELOG', ENV['HLANG'], 'rdoc'].compact.join('.')
   self.extra_rdoc_files  = FileList['*.rdoc']
   spec_extras[:extensions] = "ext/neversaydie/extconf.rb"
-  self.rubyforge_name = 'seattlerb'
+  license 'MIT'
 end
 
 RET = Rake::ExtensionTask.new(name, HOE.spec) do |ext|

@@ -4,8 +4,8 @@ ENV['RC_ARCHS'] = '' if RUBY_PLATFORM =~ /darwin/
 
 require 'mkmf'
 
-LIBDIR      = Config::CONFIG['libdir']
-INCLUDEDIR  = Config::CONFIG['includedir']
+LIBDIR      = RbConfig::CONFIG['libdir']
+INCLUDEDIR  = RbConfig::CONFIG['includedir']
 
 $CFLAGS << " -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline"
 
